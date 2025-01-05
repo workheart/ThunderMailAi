@@ -2,6 +2,7 @@
   "name": "thunderbird-mail-ai",
   "version": "1.0.0",
   "description": "Thunderbird Extension for AI-powered email analysis",
+  "license": "MIT",
   "scripts": {
     "build": "web-ext build",
     "start": "web-ext run",
