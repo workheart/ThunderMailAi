@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Mail AI Assistant</h2>
+        <div class="actions">
+            <button id="analyzeBtn">Analyze Email</button>
+            <button id="summarizeBtn">Summarize</button>
+        </div>
+        <div id="result" class="result-container">
+            <p id="summary"></p>
+        </div>
+        <div class="settings">
+            <label>AI Service:</label>
+            <select id="aiService">
+                <option value="ollama">Ollama (Local)</option>
+                <option value="openai">OpenAI</option>
+            </select>
+            <input type="text" id="apiEndpoint" placeholder="API Endpoint" value="http://localhost:11434/api/generate">
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html> 

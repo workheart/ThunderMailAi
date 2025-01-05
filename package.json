@@ -1,0 +1,19 @@
+{
+  "name": "thunderbird-mail-ai",
+  "version": "1.0.0",
+  "description": "Thunderbird Extension for AI-powered email analysis",
+  "scripts": {
+    "build": "web-ext build",
+    "start": "web-ext run",
+    "lint": "web-ext lint",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "web-ext": "^7.8.0",
+    "jest": "^29.7.0",
+    "eslint": "^8.56.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.2"
+  }
+} 

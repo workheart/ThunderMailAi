@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "Mail AI Assistant",
+  "version": "1.0.0",
+  "description": "AI-powered email analysis and organization",
+  "author": "Kabelfrikkler",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "esteban@ofenbau-strauch.de",
+      "strict_min_version": "91.0"
+    }
+  },
+  "permissions": [
+    "messagesRead",
+    "messagesMove",
+    "storage",
+    "tabs",
+    "<all_urls>",
+    "accountsRead",
+    "accountsFolders"
+  ],
+  "background": {
+    "scripts": ["background_scripts/background.js"]
+  },
+  "options_ui": {
+    "page": "options/options.html",
+    "open_in_tab": true
+  },
+  "message_display_action": {
+    "default_popup": "ui/popup.html",
+    "default_title": "Analyze Email"
+  }
+} 
